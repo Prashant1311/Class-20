@@ -5,11 +5,11 @@ var move,fix;
 function setup() {
   createCanvas(800,400);
   move = createSprite(400, 200, 50, 100);
-  move.shapeColor = "green";
+  move.shapeColor = "red";
   move.debug = true;
 
   fix = createSprite(400, 200, 100, 50);
-  fix.shapeColor = "green";
+  fix.shapeColor = "red";
   fix.debug = true;
 
 }
@@ -26,13 +26,13 @@ if(move.x - fix.x > fix.width/2 + move.width/2
   || move.y - fix.y > fix.height/2 + move.height/2 
   || fix.y - move.y > fix.height/2 + move.height/2){
 
-move.shapeColor = "red";
-fix.shapeColor = "red";
+move.shapeColor = "green";
+fix.shapeColor = "green";
 
 }else{
 
-move.shapeColor = "green"
-fix.shapeColor = "green"
+move.shapeColor = "red"
+fix.shapeColor = "red"
 
 
 }
